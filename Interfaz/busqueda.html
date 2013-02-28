@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="formstyle.css">
+		<link rel="stylesheet" href="jquery-ui-1.10.1.custom/css/smoothness/jquery-ui-1.10.1.custom.css" />
+		<script src="jquery-ui-1.10.1.custom/js/jquery-1.9.1.js"></script>
+  		<script src="jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.js"></script>
+		<script>
+    		$(function() {
+    			$( "#accordion" ).accordion({
+      				collapsible: true
+    			});
+  			});
+		</script>
+	</head>
+	<body>
+		<form>
+			<div class="searchform">
+				<legend>Marque otros datos para la b&uacute;squeda</legend>
+				<br>
+				<p><label class="titlefield">No. C&Oacute;DIGO: </label>
+					<input type="text" name="codigo">
+				</p>
+				<p><label class="field">Estado: </label>
+					<select size="1">
+						<option selected>Miranda</option>
+						<option>Aragua</option>
+						<option>Carabobo</option>
+						<option>Portuguesa</option>
+						<option>Zulia</option>
+						<option>Anzoategui</option>
+					</select>
+				</p>
+				<p><label class="field">Municipio: </label>
+					<select size="1">
+						<option selected>Baruta</option>
+						<option>Sucre</option>
+						<option>Chacao</option>
+					</select>
+				</p>
+				<br>
+				<p><label class="titlefield">DATOS GENERALES DEL YACIMIENTO</label></p>
+				<br><br>
+				<p><label class="field">Nombre: </label>
+					<input type="text" name="nombre">
+				</p>
+				<div id="accordion">
+						<p>LOCALIDAD</p>
+						<div>
+							<p><input type="checkbox">Urbano</p>
+							<p><input type="checkbox">Rural</p>
+							<p><input type="checkbox">Ind&iacute;gena</p>
+							<p>Nombre: <input type="text"></p>
+						</div>
+				</div>
+				<br>
+				<br>
+			
+			</div>
+		</form>	
+	</body>
+</html>

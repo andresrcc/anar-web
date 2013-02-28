@@ -1,0 +1,87 @@
+.searchform {
+	border: solid #868686 thin;
+	width: 500px;
+	background-color: #FFF;
+	font-size: 11px;
+	font-family: verdana;
+	text-indent: 20px;
+}
+
+.searchform fieldset {
+	border: none;
+	margin: 0 0 0 -10px;
+	padding: 0px;
+}
+
+.searchform legend {
+	color: #FFF;
+	font-weight: bold;
+	background-color: black;
+	width: 490px;
+	padding: 5px;
+}
+
+.searchform p {
+	margin: 0;
+}
+
+.resultadopar {
+	background-color: #D8D8D8; color: black;
+}
+div.resultadoimpar  {
+	background-color: white; color: black;
+}
+
+label.field {
+	text-align: left;
+	width: 100px;
+	float: left;
+	padding: 0px;
+}
+
+label.titlefield {
+	text-align: left;
+	float: left;
+	font-weight: bold;
+	padding: 0px;
+}
+
+
+.wrap {
+    position:relative;
+    	width: 487px;
+    padding:5px 6px 6px 7px; 
+    background:#f0f0f0;
+    border:1px solid #ccc;
+    font-size: 11px;
+	font-family: verdana;
+    overflow:hidden;
+}
+.search {
+    width:380px;
+    padding-left: 1px;
+    
+    
+}
+.go {
+    position:relative; top:0;
+    border: none;
+    width: 32px;
+    background:white url(images/lupa.png) center left no-repeat;
+}
+
+.resultados{
+    border: 1px solid #ccc;
+    margin: 3px 3px 3px 3px;
+    }
+
+#close {
+    display:block;
+    float:right;
+    width:30px;
+    height:29px;
+    background:url(images/mas.png) no-repeat center center;
+}
+   
+
+
