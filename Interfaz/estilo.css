@@ -1,0 +1,60 @@
+/*estilo general de la pagina*/
+body{
+    font: verdana,
+    arial, helvetica,
+    sans serif;
+    font-size: 10.5ppt;
+    color:#fff;
+    background-color: #000000;
+
+   /*margenes -> requerimientos
+     de disenador*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/**
+ * Estilo de las secciones 
+ * ver doc en html
+ */
+
+#registro{
+    text-align:right;
+
+    /* + espacio dentro 
+      del objeto*/
+    padding-right: 50px;
+
+    color:#2874A6;
+    background-color: #fff;
+}
+
+#logo{
+    /*debo flotar el logo
+     para que solape
+     el menu_superior*/
+    float:left;
+    background-color: #812428;
+    margin-left: 100px;
+}
+
+
+#menu_superior{
+    background-color: #812428;
+    padding-left: 230px;
+}
+
+/*Menu lateral izquierdo*/
+#navegacion{
+    position:absolute;
+    top:200px;
+    left:110px;
+}
+
+
+/*ajustando la posicion*/
+#contenido{
+    margin-left: 260px;
+    margin-top: 70px;
+
+}
