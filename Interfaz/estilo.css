@@ -63,8 +63,10 @@ body{
 
 /*ajustando la posicion*/
 #contenido{
-    float:right;
-
+    position:absolute;
+    top:150px;
+    right:100px;
+    left:400px;
 }
 
 
