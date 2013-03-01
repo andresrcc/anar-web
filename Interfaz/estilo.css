@@ -1,11 +1,19 @@
+/*N::
+ *To Do:
+ * No usar absolute para el
+ * posicionamiento.
+ *::
+ */
+
+
 /*estilo general de la pagina*/
 body{
-    font: verdana,
+    font:verdana,
     arial, helvetica,
     sans serif;
     font-size: 10.5ppt;
     color:#fff;
-    background-color: #000000;
+    background-color:#000000;
 
    /*margenes -> requerimientos
      de disenador*/
@@ -23,10 +31,10 @@ body{
 
     /* + espacio dentro 
       del objeto*/
-    padding-right: 50px;
+    padding-right:50px;
 
     color:#2874A6;
-    background-color: #fff;
+    background-color:#fff;
 }
 
 #logo{
@@ -34,8 +42,8 @@ body{
      para que solape
      el menu_superior*/
     float:left;
-    background-color: #812428;
-    margin-left: 100px;
+    background-color:#812428;
+    margin-left:100px;
 }
 
 
@@ -46,15 +54,44 @@ body{
 
 /*Menu lateral izquierdo*/
 #navegacion{
-    position:absolute;
-    top:200px;
-    left:110px;
+    float:left;
+    clear:left;
+    margin-top:30px;
+}
+
+#botones{
+    float:left;
+    margin-left:100px;
+}
+#mapa{
+    float:left;
+    clear:left;
 }
 
 
 /*ajustando la posicion*/
 #contenido{
-    margin-left: 260px;
-    margin-top: 70px;
+    float:right;
 
+}
+
+
+/*posicionando 
+ *formulario 
+ *de busqueda y
+ *resultados*/
+
+.formulario{
+    position:relative;
+    clear:both;
+}
+
+.busqueda{
+    position:relative;
+    float:left;
+}
+
+.resultado{
+    position:relative;
+    float:right
 }

@@ -3,10 +3,32 @@
 
 <html>
   <head>
+<!--Estilo General Pagina Web-->
     <link href="estilo.css" 
 	  rel="stylesheet"
 	  type="text/css">
-  </head>
+
+<!--Tablas y JQuery-->
+    <link rel="stylesheet" 
+	  type="text/css" 
+	  href="formstyle.css">
+    <link rel="stylesheet" 
+	  href="jquery-ui-1.10.1.custom/css/smoothness/jquery-ui-1.10.1.custom.css"/>
+
+    <script src="jquery-ui-1.10.1.custom/js/jquery-1.9.1.js">
+    </script>
+
+    <script src="jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.js">
+    </script>
+
+    <script>
+    		$(function() {
+    			$( "#accordion" ).accordion({
+      				collapsible: true
+    			});
+  			});
+    </script>
+   </head>
 
   <body>
 
@@ -32,6 +54,7 @@
 
 
     <div id="navegacion">
+      <div id="botones">
       Manifestacion(es)
       <br>
       <br>
@@ -63,13 +86,150 @@
 	   width="130"
 	   height="50"/>
       <br>
+      <br>
     </div>
+    <div id="mapa">
+      <iframe width="300" 
+	      height="300" 
+	      frameborder="0" 
+	      scrolling="no" 
+	      marginheight="0" 
+	      marginwidth="0" 
+	      src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Venezuela&amp;sll=7.122696,-65.632324&amp;sspn=18.905041,33.815918&amp;ie=UTF8&amp;hq=&amp;hnear=Venezuela&amp;t=m&amp;ll=6.751896,-65.961914&amp;spn=13.064165,13.183594&amp;z=5&amp;output=embed">
+      </iframe>
+      <br/>
+      <small>
+	<a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Venezuela&amp;sll=7.122696,-65.632324&amp;sspn=18.905041,33.815918&amp;ie=UTF8&amp;hq=&amp;hnear=Venezuela&amp;t=m&amp;ll=6.751896,-65.961914&amp;spn=13.064165,13.183594&amp;z=5" 
+	   style="color:#0000FF;text-align:left">Ver mapa en mayor resolución</a></small>
+    </div>
+   </div>
 
     <div id="contenido">
       Software Interactivo /
       Consulta en la base
       de datos
+      <br>
+      <br>
+     <div class="formulario">
+
+<!--formulario de busqueda-->
+     <div class="busqueda">
+      <form>
+      <div class="searchform">
+	<legend>Marque otros datos para la b&uacute;squeda</legend>
+	<br>
+	<p><label class="titlefield">No. C&Oacute;DIGO: </label>
+		<input type="text" name="codigo">
+	</p>
+	<p><label class="field">Estado: </label>
+		<select size="1">
+		  <option selected>Miranda</option>
+		  <option>Aragua</option>
+		  <option>Carabobo</option>
+		  <option>Portuguesa</option>
+		  <option>Zulia</option>
+		  <option>Anzoategui</option>
+		</select>
+	</p>
+	<p><label class="field">Municipio: </label>
+		<select size="1">
+  		  <option selected>Baruta</option>
+		  <option>Sucre</option>
+		  <option>Chacao</option>
+		</select>
+	</p>
+	<br>
+
+	<p><label class="titlefield">DATOS GENERALES DEL YACIMIENTO</label></p>
+	<br><br>
+	<p><label class="field">Nombre: </label>
+	    	<input type="text" name="nombre">
+	</p>
+
+	<div id="accordion">
+
+	    <p>LOCALIDAD</p>
+	    <div>
+		<p><input type="checkbox">Urbano</p>
+		<p><input type="checkbox">Rural</p>
+		<p><input type="checkbox">Ind&iacute;gena</p>
+		<p>Nombre: <input type="text"></p>
+	    </div>
+
+	</div>
+	<br>
+	<br>
+      </div>
+     </form>
+    </div>
+<!--resultados de la busqueda-->
+   <div class="resultado">
+   <form>
+    <div class="wrap">
+      <div> B&uacute;squeda: 
+        <input style="font-style:italic" 
+	       type="text" 
+	       class="search " 
+	       value="Manifestaci&oacute;n, lugar, estado..." />
+	<button type="button" class="go"></button>
+       </div>
     </div>
 
-  </body>
+   <div class="searchform">
+     <legend>Resultados de la b&uacute;squeda</legend>
+      <div class="resultados">
+
+	 <div class="resultadoimpar" 
+	      style="width:100%">
+	   <p><label class="titlefield">84/1/0</label>
+	   </p>
+	   <a id="close" 
+	      href="#"></a>
+	   <br>
+	   <table>
+	     <tr><td>MONUMENTO MEGALITICO/MENHIR</td></tr>
+	     <tr><td>Vigirima</td></tr>
+	     <tr><td>Estado Carabobo</td></tr>
+	   </table>
+	 </div>
+	  
+	 <div class="resultadopar">
+	    <p><label class="titlefield">350</label>
+	    </p>
+
+	    <a id="close" 
+	       href="#"></a>
+	    <br>
+	    <table >
+	      <tr><td >PINTURA RUPESTRE</td></tr>
+	      <tr><td ><i>El Pe&ntilde;&oacute;n de las pinturas</i></td></tr>
+	      <tr><td >Cueva de la Aguada</td></tr>
+	      <tr><td >Estado Lara</td></tr>
+	    </table>
+	 </div>
+
+	 <div class="resultadoimpar" 
+	      style="width:100%">
+	   <p><label class="titlefield">20</label></p>
+	   <a id="close" 
+	      href="#"></a>
+	   <br>
+	     <table>
+	       <tr><td >PETROGLIFO</td></tr>
+	       <tr><td ><i>Piedra Pintada de Pinto</i></td></tr>
+	       <tr><td >La Victoria</td></tr>
+	       <tr><td >Estado Aragua</td></tr>
+	     </table>
+	 </div>
+     </div>		
+     <center>
+       <button type="button">Ver todos los resultados</button>
+     </center>		
+    </div>
+   </form>
+   </div>
+   </div>
+  </div>
+
+ </body>
 </html>
