@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="formstyle.css">
+		<link rel="stylesheet" type="text/css" href="avanzada.css">
+		<link rel="stylesheet" href="jquery-ui-1.10.1.custom/css/smoothness/jquery-ui-1.10.1.custom.css" />
+	</head>
+<body>
+
+	<ul id="nav">
+		<li><a href="#inicio">Inicio</a></li>
+		<li><a href="#quienes">Quienes Somos</a></li>
+		<li><a href="#patrimonio">Patrimonio Rupestre Venezolano</a></li>
+		<li><a href="#programa">Programa de Educacion</a></li>
+		<li><a href="#otros">Otros Servicios</a></li>
+		<li><a href="#contacto">Contacto</a></li>
+	</ul>
+
+	<div id="contenedor">
+
+		<div id="filtro">
+			<p><label id="titulo">Filtrar</label></p><br>
+			<div id="selecciones">
+				<p style="color: #505050; font-size: 12pt">Localidad:</p>
+				<div>
+					<p><input type="checkbox">Urbano</p>
+					<p><input type="checkbox">Rural</p>
+					<p><input type="checkbox">Ind&iacute;gena</p>
+				</div>
+				<br>
+				<p style="color: #505050; font-size: 12pt">Municipio: </p>
+				<select size="1">
+					<option selected></option>
+					<option>Sucre</option>
+					<option>Chacao</option>
+					<option>Baruta</option>
+				</select>
+				<br>
+				<br>
+				<p style="color: #505050; font-size: 12pt">Estado: </p>
+					<select size="1">
+						<option selected></option>
+						<option>Aragua</option>
+						<option>Carabobo</option>
+						<option>Portuguesa</option>
+						<option>Miranda</option>
+						<option>Anzoategui</option>
+					</select>
+
+			</div>
+			<br>
+			<br>
+			<button id="botonFiltrar" type="button" style="font-family: verdana;">Filtrar</button>
+
+		</div>
+
+
+		<div id="res">
+			<p><label id="titulo">Resultados</label></p><br>
+				<div class="resultados">
+					<div class="resultado" style="width:100%">
+						<div id="resImagen">
+							<img src="images/piedra.jpg" height="100">
+						</div>
+						<div id="resTexto">
+							<p>84/1/0 </p>
+							<br>
+							<table>
+								<tr><td >MONUMENTO MEGALITICO/MENHIR</td></tr>
+								<tr><td >Vigirima</td></tr>
+								<tr><td >Estado Carabobo</td></tr>
+							</table>
+						</div>
+						<img src="images/lineaGris.gif" >
+					</div>
+
+					<div class="resultado">
+						<div id="resImagen">
+							<img src="images/barinas.jpg" height="100">
+						</div>
+						<div id="resTexto">
+							<p>350</p>
+							<br>
+							<table >
+								<tr><td >PINTURA RUPESTRE</td></tr>
+								<tr><td ><i>El Pe&ntilde;&oacute;n de las pinturas</i></td></tr>
+								<tr><td >Cueva de la Aguada</td></tr>
+								<tr><td >Estado Lara</td></tr>
+							</table>
+						</div>
+						<img src="images/lineaGris.gif" >
+					</div>
+
+					<div class="resultado" style="width:100%">
+						<div id="resImagen">
+							<img src="images/arte.jpg" height="100">
+						</div>
+						<div id="resTexto">
+							<p>20 </p>
+							<br>
+							<table>
+								<tr><td >PETROGLIFO</td></tr>
+								<tr><td ><i>Piedra Pintada de Pinto</i></td></tr>
+								<tr><td >La Victoria</td></tr>
+								<tr><td >Estado Aragua</td></tr>
+							</table>
+						</div>
+					</div>
+
+					
+				</div>		
+		</div>
+
+	</div>
+
+</body>
+</html>
