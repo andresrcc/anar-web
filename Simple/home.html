@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Archivo Nacional de Arqueologia</title>
+<!--Estilo Buscador-->
+<style type="text/css">
+body {
+    background: white;
+    font-family: ubuntu, ubuntubeta, 'Bitstream Vera Sans', 'DejaVu Sans', Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 auto;
+}
+button::-moz-focus-inner {
+    /* fix buttons in FF */
+    border: 0;
+    padding: 0;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* Remove button margin in webkit */
+    button{
+        margin: 0;
+    }
+}
+.acchide {
+    direction: ltr;
+    text-indent: -999em;
+    display: block;
+}
+.search-box {
+    width: 595px;
+    margin: 0 auto;
+    margin-top: 63px;
+}
+.ubuntu-branding {
+    background-color: #aea79f;
+    height: 40px;
+    width: 40px
+    border-radius: 5px 5px 0 0;
+}
+.wrapper {
+    padding: 0;
+    border: 1px solid #eee;
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+.wrapper h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/*Logo ANAR aqui cambian el tamano*/
+.logo a {
+    font-size: 1px;
+    display: block;
+    text-indent: -9999px;
+    background: url(imagenes/logo.png) no-repeat;
+    background-size:200px;
+    margin: 0;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0;
+    height: 100px;
+    width: auto;
+    margin-bottom: 15px;
+    position: relative;
+}
+/*Contenedor logo*/
+.logo {
+   max-width: 100%;
+   max-height: 100%;
+   height:auto;
+   width:auto;
+}
+/*no le paren*/
+.wrapper input {
+    /* allows styling in webkit */
+    -webkit-appearance: textfield;
+    display: inline-block;
+    vertical-align: top;
+    width: 384px;
+    height: 32px;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #AEA79F;
+}
+.inner {
+    display: inline-block;
+    margin: 65px auto 100px auto;
+}
+.inner form {
+    height: 32px;
+}
+/*Search button, el de la lupa blanca*/
+#sbtn {
+    margin: 0 3px;
+    display: inline-block;
+    vertical-align: top;
+    background-color:#812428;
+    background: #812428; /* Old browsers */
+    border: 1px solid #C0C0C0;
+    border-radius: 2px;
+    color: #FFFFFF;
+    -moz-user-select: none;
+    cursor: default;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    min-width: 54px;
+    padding: 0 8px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*Parte del search button*/
+#sspan {
+    background: url(http://start.ubuntu.com/12.04/sprite.png) no-repeat;
+    background-position: -10px -692px;
+    vertical-align: top;
+    display: inline-block;
+    height: 17px;
+    margin: 5px 19px;
+    width: 14px;
+}
+/*Botones con los acordeones*/
+.botones {
+   display:inline;
+}
+</style>
+<!--Estilo Acordeones-->
+<link href="style/format.css" rel="stylesheet" type="text/css" />
+<link href="style/text.css" rel="stylesheet" type="text/css" />
+<!--Estilo menu-->
+<link rel="stylesheet" type="text/css" href="style/theme.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"> </script>
+<script type="text/javascript" src="includes/javascript.js"> </script>
+
+</head>
+<body>
+<ul class="nav">
+	<li><a href="#inicio">Inicio</a></li>
+	<li><a href="#quienes">Quienes Somos</a></li>
+	<li><a href="#patrimonio">Patrimonio Rupestre Venezolano</a></li>
+	<li><a href="#programa">Programa de Educacion</a></li>
+	<li><a href="#otros">Otros Servicios</a></li>
+	<li><a href="#contacto">Contacto</a></li>
+</ul>
+    <div class="search-box">
+        <div class="ubuntu-branding"></div>
+        <div class="wrapper">
+            <div class="inner">
+                <div class="logo"><a href="http://www.google.com">ANAR Web</a></div>
+                 <form method="get" class="search-form" action="http://www.google.com/search" name="search">
+                    <input type="search" name="q" value="" x-webkit-speech id="sbi" /><!-- eliminate whitespace
+                    --><button id="sbtn" type="submit"><span id="sspan"></span><span class="acchide">Search</span></button>
+                    <input type="hidden" name="ie" value="UTF-8" />
+                    <input type="hidden" name="sa" value="Search" />
+                    <input type="hidden" name="channel" value="fe">
+                    <input type="hidden" name="client" value="browser-ubuntu">
+                    <input title="search" type="hidden" name="hl" value="en" />
+                </form>
+               <div class="botones">
+
+                   	<div id="wrapper">
+		          <div class="accordionButton">Manifestaciones</div>
+		             <div class="accordionContent">
+                               <img src="imagenes/petroglifos_boton.png"/><br />
+		               <img src="imagenes/cerros_boton.png"/><br />
+		               <img src="imagenes/cupulas_boton.png"/><br />
+		               <img src="imagenes/geoglifo_boton.png"/><br />
+		               <img src="imagenes/micropetroglifos_boton.png"/><br />
+		               <img src="imagenes/monumentos_boton.png"/><br />
+		               <img src="imagenes/pinturas_boton.png"/>
+                             </div>
+		          <div class="accordionButton">Estado</div>
+	                </div>
+
+               </div>
+            </div>
+        </div>
+    </div><!-- close search-box -->
+<script type="text/javascript">
+//<![CDATA[
+(function focus_search() {
+    function search_select(e) {
+        if(e.value.length > 0) {
+            e.select();
+        }
+        e.select();
+    }
+
+    sbi = document.getElementById('sbi');
+    sbi.focus();
+    search_select(sbi);
+})();
+//]]>
+</script>
+</body>
+</html>
